@@ -1,0 +1,18 @@
+<p>
+  product fake API
+</p>
+<table class="TFtable">
+  <tr>
+    <th>Full Name</th>
+    <th>Store</th>
+    <th>Price</th>
+    <th>Model</th>
+  </tr>
+  <tr *ngFor="let Prod of productsResult">
+    <td>{{Prod.title}}</td>
+    <td>{{Prod.store}}</td>
+    <td>{{Prod.price}}</td>
+    <td>{{Prod.model}}</td>
+  </tr>
+
+</table>

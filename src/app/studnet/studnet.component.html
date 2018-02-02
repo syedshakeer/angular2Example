@@ -1,0 +1,44 @@
+<p>
+  studnet works!
+</p>
+<div>
+
+  <form  [formGroup]="myGroup"  (ngSubmit)="Save(myGroup)" novalidate >
+ 
+      <div>
+        <label>
+          First Name: <input type="text"   formControlName="firstName" /> 
+        </label>
+      </div>
+    
+    
+      <div *ngIf="myGroup.controls.firstName.dirty">
+          
+        <div *ngIf="!myGroup.controls.firstName.valid">
+          * not valid
+        </div> 
+        <div *ngIf="myGroup.controls.firstName.hasError('required')" >
+          *Please Enter Name
+        </div>
+
+      </div>
+      <br>
+      <br>
+        <div>
+          <label>
+          Last Name: <input type="text"  formControlName="lastName"  /> 
+          </label>
+           <div *ngIf="myGroup.controls.lastName.dirty">
+             <div *ngIf="myGroup.controls.lastName.touched">
+                <div>
+
+                </div>
+              
+            </div>
+           </div>
+        </div>
+   <button type="submit">Log In</button>
+  </form>
+   
+</div>
+

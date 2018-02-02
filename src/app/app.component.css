@@ -1,0 +1,29 @@
+.button-color{color:white; background-color:red;}
+.one {
+  color: green;
+}
+
+.btn-default {
+  color: white;
+  background-color: blue;
+
+}
+
+.btn-change {
+  color: white;
+  background-color: red;
+}
+
+.dynStyle {
+  color: brown;
+  background-color: cornflowerblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 800;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 100px;
+  height: 100px;
+}
