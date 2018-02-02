@@ -8,14 +8,16 @@ import { UserComponent } from './user/user.component';
 import { ProductComponent } from './product/product.component';
 import {Http,Response, HttpModule} from '@angular/http'
 import { HttpClientModule } from '@angular/common/http';
-import { StudnetComponent } from './studnet/studnet.component'
+import { StudnetComponent } from './studnet/studnet.component';
+import { SampleComponent } from './sample/sample.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
     ProductComponent,
-    StudnetComponent
+    StudnetComponent,
+    SampleComponent
     
   ],
   imports: [
